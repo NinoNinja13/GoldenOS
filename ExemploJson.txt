@@ -16,7 +16,7 @@ ID_UNICO: pode ser qualquer string única (ex: um hash, timestamp, ou algo legí
 
 name: nome que aparecerá para o usuário (pode conter emojis).
 
-file: caminho relativo (ex: "pasta/index.html") ou URL completa (ex: "https://exemplo.com").
+file: caminho relativo (ex: "apps/exemple/index.html") ou URL completa (ex: "https://exemplo.com").
 
 icon: nome do arquivo de ícone (deve estar na pasta icons/ ou no mesmo local definido).
 
