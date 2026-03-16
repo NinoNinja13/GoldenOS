@@ -1,0 +1,37 @@
+}
+📌 Instruções para Adicionar e Remover Itens
+✅ Como adicionar um novo item
+Para adicionar um novo aplicativo, jogo, web ou download, siga o modelo abaixo dentro da categoria correta (apps, downloads, webs ou games):
+
+
+"ID_UNICO": {
+  "name": "Nome do Item",
+  "file": "caminho/ou/url",
+  "icon": "nome_do_icone.png",
+  "category": "apps"   // ou "downloads", "webs", "games"
+}
+
+
+ID_UNICO: pode ser qualquer string única (ex: um hash, timestamp, ou algo legível). Evite repetir IDs.
+
+name: nome que aparecerá para o usuário (pode conter emojis).
+
+file: caminho relativo (ex: "pasta/index.html") ou URL completa (ex: "https://exemplo.com").
+
+icon: nome do arquivo de ícone (deve estar na pasta icons/ ou no mesmo local definido).
+
+category: deve corresponder à categoria onde o item está inserido (ex: se colocar em apps, use "apps").
+
+Exemplo prático – adicionar um novo jogo:
+
+
+"69abc123def45": {
+  "name": "Meu Jogo Novo 🔹",
+  "file": "MeuJogo/index.html",
+  "icon": "MeuJogo.png",
+  "category": "games"
+}
+
+
+
+
