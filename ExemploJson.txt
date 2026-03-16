@@ -16,7 +16,7 @@ ID_UNICO: pode ser qualquer string única (ex: um hash, timestamp, ou algo legí
 
 name: nome que aparecerá para o usuário (pode conter emojis).
 
-file: caminho relativo (ex: "apps/exemple/index.html") ou URL completa (ex: "https://exemplo.com").
+file: caminho relativo (ex: "exemple/index.html") ou URL completa (ex: "https://exemplo.com").
 
 icon: nome do arquivo de ícone (deve estar na pasta icons/ ou no mesmo local definido).
 
@@ -25,13 +25,105 @@ category: deve corresponder à categoria onde o item está inserido (ex: se colo
 Exemplo prático – adicionar um novo jogo:
 
 
-"69abc123def45": {
-  "name": "Meu Jogo Novo 🔹",
-  "file": "MeuJogo/index.html",
-  "icon": "MeuJogo.png",
-  "category": "games"
+{
+    "apps": {
+        "68950c60947f6": {
+            "name": "GoldenZap",
+            "file": "GoldenZap/index.php",
+            "icon": "GoldenZap.png",
+            "category": "apps"
+        },
+        "68950c9636915": {
+            "name": "GoldenIA",
+            "file": "GoldenIA/index.php",
+            "icon": "GoldenIA.png",
+            "category": "apps"
+        },
+        "68950cb54f955": {
+            "name": "GoldenTok",
+            "file": "GoldenTok/index.php",
+            "icon": "GoldenTok.png",
+            "category": "apps"
+        },
+        "68950cda95352": {
+            "name": "GoldenSocial",
+            "file": "GoldenSocial/index.php",
+            "icon": "GoldenSocial.png",
+            "category": "apps"
+        },
+        "68950cfa7732c": {
+            "name": "GoldenTv",
+            "file": "GoldenTv/index.php",
+            "icon": "GoldenTv.png",
+            "category": "apps"
+        },
+        "68950d199e80c": {
+            "name": "GoldenTube",
+            "file": "GoldenTube/index.php",
+            "icon": "GoldenTube.png",
+            "category": "apps"
+        },
+        "69abf423bcab4": {
+            "name": "Golden Paint",
+            "file": "GoldenPaint/index.html",
+            "icon": "GoldenPaint.png",
+            "category": "apps"
+        }
+    },
+    "games": {
+        "68b72bdfdd09c": {
+            "name": "GoldenBlocks",
+            "file": "GoldenBlocks/index.html",
+            "icon": "GoldenBlocksJapan.png",
+            "category": "games"
+        },
+        "69acf129bbf56": {
+            "name": "Golden Pet",
+            "file": "GoldenPet/index.html",
+            "icon": "GoldenPet.png",
+            "category": "games"
+        },
+        "69acf338b9308": {
+            "name": "Golden Racer Futuristic",
+            "file": "GoldenRacerFuturistic/index.html",
+            "icon": "GoldenRacerFuturistic.png",
+            "category": "games"
+        }
+    },
+    "downloads": {
+        "68950cb54975": {
+            "name": "NetShare.apk",
+            "file": "APK/NetShare.apk",
+            "icon": "NetShareApk.png",
+            "category": "downloads"
+        },
+        "68950cb54976": {
+            "name": "MacroDroid.apk",
+            "file": "APK/MacroDroid.apk",
+            "icon": "MacroDroidApk.png",
+            "category": "downloads"
+        }
+    },
+    "webs": {
+        "68950d4882972": {
+            "name": "Gemini",
+            "file": "https://Gemini.google.com",
+            "icon": "Gemini.png",
+            "category": "webs"
+        },
+        "68950d799966b": {
+            "name": "YouTube",
+            "file": "https://Youtube.com",
+            "icon": "YouTube.png",
+            "category": "apps"
+        },
+        "68950e0d8076e": {
+            "name": "Plex",
+            "file": "https://watch.plex.tv/pt/",
+            "icon": "Plex.png",
+            "category": "webs"
+        }
+    }
 }
-
-
 
 
