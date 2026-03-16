@@ -29,6 +29,8 @@ Este projeto é Open Source. Você tem a liberdade de estudar, modificar e distr
 
 ⚠️ IMPORTANTE: A única condição é que os créditos originais nunca sejam removidos. Respeite a jornada de quem transformou café e noites sem sono em liberdade digital.
 
+💽 Video de Demonstração 
+https://youtu.be/-3YMQ4WX3Dg
 
 Como rodar?
 
