@@ -1,129 +1,83 @@
-}
-📌 Instruções para Adicionar e Remover Itens
-✅ Como adicionar um novo item
-Para adicionar um novo aplicativo, jogo, web ou download, siga o modelo abaixo dentro da categoria correta (apps, downloads, webs ou games):
 
 
+# 📌 **Guia de Customização: Adicionar e Remover Itens**
+
+O **GoldenOS** é alimentado por um motor JSON. Isso significa que você não precisa programar para adicionar novos apps; basta seguir a estrutura abaixo.
+
+### 🛠️ **Estrutura de um Novo Item**
+
+Para adicionar um aplicativo, jogo ou link, insira este bloco dentro da categoria correta (`apps`, `games`, `downloads` ou `webs`):
+
+```json
 "ID_UNICO": {
-  "name": "Nome do Item",
+  "name": "Nome do Item 🔹",
   "file": "caminho/ou/url",
-  "icon": "nome_do_icone.png",
-  "category": "apps"   // ou "downloads", "webs", "games"
+  "icon": "icone.png",
+  "category": "apps" 
 }
 
+```
 
-ID_UNICO: pode ser qualquer string única (ex: um hash, timestamp, ou algo legível). Evite repetir IDs.
+---
 
-name: nome que aparecerá para o usuário (pode conter emojis).
+### 🔍 **Entenda os Campos**
 
-file: caminho relativo (ex: "exemple/index.html") ou URL completa (ex: "https://exemplo.com").
-
-icon: nome do arquivo de ícone (deve estar na pasta icons/ ou no mesmo local definido).
-
-category: deve corresponder à categoria onde o item está inserido (ex: se colocar em apps, use "apps").
-
-Exemplo prático – adicionar um novo jogo:
+* **`ID_UNICO`**: Uma sequência de letras e números que nunca se repete (Ex: `69abc123`).
+* **`name`**: O título que aparece na interface (Aceita **Emojis**!).
+* **`file`**:
+* **Local**: Pasta e arquivo (Ex: `MeuApp/index.php`).
+* **Web**: Link completo (Ex: `https://google.com`).
 
 
+* **`icon`**: Nome da imagem que deve estar na pasta de ícones do sistema.
+* **`category`**: Deve ser idêntico ao nome da seção pai (`apps`, `games`, `downloads` ou `webs`).
+
+---
+
+### 🚀 **Exemplo Prático (Seu Arquivo JSON)**
+
+Veja como os itens se organizam de forma limpa. **Atenção às vírgulas** ao final de cada bloco!
+
+```json
 {
     "apps": {
         "68950c60947f6": {
-            "name": "GoldenZap",
+            "name": "GoldenZap 🔹",
             "file": "GoldenZap/index.php",
             "icon": "GoldenZap.png",
             "category": "apps"
         },
-        "68950c9636915": {
-            "name": "GoldenIA",
-            "file": "GoldenIA/index.php",
-            "icon": "GoldenIA.png",
-            "category": "apps"
-        },
-        "68950cb54f955": {
-            "name": "GoldenTok",
-            "file": "GoldenTok/index.php",
-            "icon": "GoldenTok.png",
-            "category": "apps"
-        },
-        "68950cda95352": {
-            "name": "GoldenSocial",
-            "file": "GoldenSocial/index.php",
-            "icon": "GoldenSocial.png",
-            "category": "apps"
-        },
-        "68950cfa7732c": {
-            "name": "GoldenTv",
-            "file": "GoldenTv/index.php",
-            "icon": "GoldenTv.png",
-            "category": "apps"
-        },
-        "68950d199e80c": {
-            "name": "GoldenTube",
-            "file": "GoldenTube/index.php",
-            "icon": "GoldenTube.png",
-            "category": "apps"
-        },
-        "69abf423bcab4": {
-            "name": "Golden Paint",
-            "file": "GoldenPaint/index.html",
-            "icon": "GoldenPaint.png",
+        "69abf427bcab9": {
+            "name": "Golden Notes 🔹",
+            "file": "GoldenNotes/index.html",
+            "icon": "GoldenNotes.png",
             "category": "apps"
         }
     },
     "games": {
         "68b72bdfdd09c": {
-            "name": "GoldenBlocks",
+            "name": "GoldenBlocks 🔹",
             "file": "GoldenBlocks/index.html",
             "icon": "GoldenBlocksJapan.png",
             "category": "games"
-        },
-        "69acf129bbf56": {
-            "name": "Golden Pet",
-            "file": "GoldenPet/index.html",
-            "icon": "GoldenPet.png",
-            "category": "games"
-        },
-        "69acf338b9308": {
-            "name": "Golden Racer Futuristic",
-            "file": "GoldenRacerFuturistic/index.html",
-            "icon": "GoldenRacerFuturistic.png",
-            "category": "games"
-        }
-    },
-    "downloads": {
-        "68950cb54975": {
-            "name": "NetShare.apk",
-            "file": "APK/NetShare.apk",
-            "icon": "NetShareApk.png",
-            "category": "downloads"
-        },
-        "68950cb54976": {
-            "name": "MacroDroid.apk",
-            "file": "APK/MacroDroid.apk",
-            "icon": "MacroDroidApk.png",
-            "category": "downloads"
-        }
-    },
-    "webs": {
-        "68950d4882972": {
-            "name": "Gemini",
-            "file": "https://Gemini.google.com",
-            "icon": "Gemini.png",
-            "category": "webs"
-        },
-        "68950d799966b": {
-            "name": "YouTube",
-            "file": "https://Youtube.com",
-            "icon": "YouTube.png",
-            "category": "apps"
-        },
-        "68950e0d8076e": {
-            "name": "Plex",
-            "file": "https://watch.plex.tv/pt/",
-            "icon": "Plex.png",
-            "category": "webs"
         }
     }
 }
 
+```
 
+---
+
+### ⚠️ **Regras de Ouro (Para não quebrar o sistema)**
+
+1. **A Vírgula Fatal:** Todo bloco deve ter uma vírgula `,` após fechar a chave `}`, **EXCETO** o último item de cada categoria.
+2. **IDs Únicos:** Nunca use o mesmo ID para dois itens diferentes, ou um deles irá desaparecer.
+3. **Caminhos:** Se o seu arquivo for um `.html` ou `.php` local, certifique-se de que a pasta existe dentro do diretório do GoldenOS.
+
+---
+
+### 🗑️ **Como Remover um Item**
+
+1. Localize o **ID** do item no arquivo JSON.
+2. Apague desde o ID até o fechamento da chave `}` correspondente.
+3. **Dica:** Se o item removido for o último da lista, lembre-se de apagar a vírgula do item que agora se tornou o último.
