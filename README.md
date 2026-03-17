@@ -40,7 +40,9 @@ Este projeto é **Open Source**. Você tem a liberdade de estudar, modificar e d
 
 📺 **Assista ao Vídeo de Demonstração:** [Clique aqui para ver no YouTube](https://youtu.be/-3YMQ4WX3Dg)
 
+
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/54f921f9-1c52-4a13-8b93-cbaf263c0471" />
+
 
 ---
 
