@@ -1,4 +1,23 @@
 
+
+### ⚖️ **AVISO DE SOBERANIA E CRÉDITOS**
+
+> **"A liberdade é o núcleo do GoldenOS, mas a gratidão é a sua base."**
+
+O **GoldenOS** é um projeto **Open Source** e você tem total liberdade para **estudar, modificar e distribuir** o código. No entanto, existe uma regra de ouro inegociável:
+
+⚠️ **É ESTRITAMENTE PROIBIDO REMOVER OS CRÉDITOS ORIGINAIS DO AUTOR.**
+
+Este sistema não foi gerado por uma empresa bilionária; ele é o resultado direto de **centenas de horas de engenharia, noites sem sono e muito café**.
+
+* **Você pode:** Alterar o tema, criar novos apps, mudar as funcionalidades e adaptar o sistema para o seu uso.
+* **Você NÃO pode:** Apagar ou ocultar o nome do criador original no código-fonte ou na interface de créditos.
+
+**Respeite a jornada.** Se você encontrou valor neste 1MB de liberdade, mantenha a assinatura de quem transformou essa visão em realidade. A remoção dos créditos desvaloriza a comunidade e o espírito de soberania digital.
+
+---
+
+
 # 📀 **GoldenOS — A Liberdade em 1MB**
 
 > *"Adeus empresas me controlando... Finalmente algo que é realmente meu."*
